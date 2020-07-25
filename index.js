@@ -95,6 +95,7 @@ function feedingRequirements(weight, age) {
 }
 
 console.log(feedingRequirements(15,1));
+
 // I give up on this. Most of this code is made up nonsense, since I didn't actually know what to do. 
 
 
@@ -155,12 +156,11 @@ console.log(centimeters + " Centimeters");
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
-function annoyingSong(){
-  for (i = 99; i >= 1; i--)
+function annoyingSong(num){
+  for (i = num; i >= 1; i--)
   console.log(i + " bottles of beer on the wall")
 }
-annoyingSong();
+annoyingSong(12);
 
 
 
@@ -173,22 +173,21 @@ annoyingSong();
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
-function myGrade(grade) {
-  if (grade > 89) {
-    console.log("You got an A")
-  } else if (grade > 79) {
-      console.log("You got a B")
-  }  else if (grade > 69) {
-      console.log("You got a C")
-  }  else if (grade > 59) {
-      console.log("You got a D")
-  } else {
-      console.log("You got an F")
-  }
-myGrade(90);
 
-// This doesnt acutally work... but it looks pretty.
+var grade =42;
+
+if (grade > 89) {
+  console.log("You got an A");
+} else if (grade > 79) {
+    console.log("You got a B");
+}  else if (grade > 69) {
+    console.log("You got a C");
+}  else if (grade > 59) {
+    console.log("You got a D");
+} else {
+    console.log("You got an F");
+}
+
 
 
 
