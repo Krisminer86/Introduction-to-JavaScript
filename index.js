@@ -68,35 +68,36 @@ calculateDogYears(.75);
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - 
 //if your calculations are correct your result should be 0.44999999999999996
   
-// this is shit code that doesn't do anything.  Hoping Mosh can teach me Javascript later.
+
 function feedingRequirements(weight, age) {
-  if (age >= 1) {
-    if (weight < 6){
-      food = (weight * .05)
+  if (age >= 1 && age <= 6) {
+      return(weight * .05);
     }
-    else if (weight < 11){
-      food = (weight * .04)
+  else if (age >=1 && age <=11) {
+      return(weight * .04);
     }
-    else if (weight < 15){
-      food = (weight * .03)
+   else if (age >= 1 && age <= 15) {
+      return(weight * .03);
     }
-    else if (weight > 15){
-      food = (weight * .02)
-    }
-  else if (age < .33){
-      food =(weight * .1)
-    }
-  else if (age < .583){
-      food = (weight * .05)
-    }
-  else if (age< 1){
-      food = (weight * .04)
+  else if (age >= 1 && age > 15) {
+      return(weight * .02);
   }
+   else if (age <1 && age >=.583) {
+      return(weight * .05);
+    }
+   else if (age <.583 && age >=.33) {
+      return(weight * .4);
+    }
+  else if (age < .33) {
+      return(weight * .1);
+  }
+ 
+  
+
 }
+console.log(feedingRequirements(12,33));
 
-console.log(feedingRequirements(15,1));
 
-// I give up on this. Most of this code is made up nonsense, since I didn't actually know what to do. 
 
 
 
