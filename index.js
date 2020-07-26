@@ -109,26 +109,54 @@ console.log(feedingRequirements(12,33));
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
 
-//This is more shit code that doesn't do anything.  Did I miss the day we were taught this???  
-let playerPick = prompt("Do you choose rock, paper or scissors?");
-let randomPick = Math.random();
 
-  if (randomPick < .34){
-    randomPick=("rock")
-  }
-  else if (randomPick  < .66)  {
-    randomPick=("paper")
-  }
-  else {
-    randomPick=("scissors")
-  }
-if (playerPick == radompick){
-  console.log("its a tie")
-} else if{
-  
-}
-// This is where I stopped giving a shit about this problem.  I don't know how to do it.
+const rps = function(playerPick)  {
+  let randomPick = Math.random();
 
+    if (randomPick < .34){
+      randomPick=("rock")
+    }
+    else if (randomPick  < .66)  {
+      randomPick=("paper")
+    }
+    else {
+      randomPick=("scissors")
+    }
+
+  let result;
+    if (playerPick === "rock" && randomPick ==="rock"){
+      result="It's a tie";
+    }
+    else if(playerPick === "rock" && randomPick ==="paper"){
+      result="You lose!";
+    }
+    else if(playerPick === "rock" && randomPick ==="scissors"){
+      result="You win!";
+    }
+    else if(playerPick === "paper" && randomPick ==="paper"){
+      result="It's a tie!"
+    }
+    else if(playerPick === "paper" && randomPick ==="scissors"){
+      result="You lose!";
+    }
+    else if(playerPick=== "paper" && randomPick ==="rock"){
+      result="You win!"
+    }
+    else if(playerPick === "scissors" && randomPick ==="scissors"){
+      result="It's a tie!";
+    }
+    else if(playerPick === "scissors" && randomPick ==="paper"){
+      result="You win!";
+    }
+    else if(playerPick=== "scissors" && randomPick ==="rock"){
+      result="You win!";
+    }  
+
+  console.log("You picked " + playerPick);
+  console.log("Opponent picked " + randomPick);
+  console.log(result);
+  }
+rps('rock');
 
 
 
